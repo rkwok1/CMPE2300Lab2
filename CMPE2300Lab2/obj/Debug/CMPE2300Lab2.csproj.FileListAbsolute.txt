@@ -1,0 +1,9 @@
+C:\Users\Ryan\Documents\GitHub\CMPE2300Lab2\CMPE2300Lab2\bin\Debug\CMPE2300Lab2.exe.config
+C:\Users\Ryan\Documents\GitHub\CMPE2300Lab2\CMPE2300Lab2\bin\Debug\CMPE2300Lab2.exe
+C:\Users\Ryan\Documents\GitHub\CMPE2300Lab2\CMPE2300Lab2\bin\Debug\CMPE2300Lab2.pdb
+C:\Users\Ryan\Documents\GitHub\CMPE2300Lab2\CMPE2300Lab2\obj\Debug\CMPE2300Lab2.csprojResolveAssemblyReference.cache
+C:\Users\Ryan\Documents\GitHub\CMPE2300Lab2\CMPE2300Lab2\obj\Debug\CMPE2300Lab2.UI_MainForm_Installotron.resources
+C:\Users\Ryan\Documents\GitHub\CMPE2300Lab2\CMPE2300Lab2\obj\Debug\CMPE2300Lab2.Properties.Resources.resources
+C:\Users\Ryan\Documents\GitHub\CMPE2300Lab2\CMPE2300Lab2\obj\Debug\CMPE2300Lab2.csproj.GenerateResource.Cache
+C:\Users\Ryan\Documents\GitHub\CMPE2300Lab2\CMPE2300Lab2\obj\Debug\CMPE2300Lab2.exe
+C:\Users\Ryan\Documents\GitHub\CMPE2300Lab2\CMPE2300Lab2\obj\Debug\CMPE2300Lab2.pdb
