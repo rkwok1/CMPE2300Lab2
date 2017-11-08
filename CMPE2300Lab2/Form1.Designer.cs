@@ -29,7 +29,7 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(UI_MainForm_Installotron));
-            this.toolStrip1 = new System.Windows.Forms.ToolStrip();
+            this.UI_toolStrip = new System.Windows.Forms.ToolStrip();
             this.UI_ToolStrip_LoadFile = new System.Windows.Forms.ToolStripButton();
             this.UI_ToolStrip_Analyze = new System.Windows.Forms.ToolStripButton();
             this.UI_ToolStrip_Algorithm = new System.Windows.Forms.ToolStripComboBox();
@@ -39,22 +39,23 @@
             this.UI_StatusStrip_PackagesLoaded = new System.Windows.Forms.ToolStripStatusLabel();
             this.UI_StatusStrip_PackagesInstallable = new System.Windows.Forms.ToolStripStatusLabel();
             this.UI_StatusStrip_PackagesUninstallable = new System.Windows.Forms.ToolStripStatusLabel();
-            this.toolStrip1.SuspendLayout();
+            this.UI_openFileDialog = new System.Windows.Forms.OpenFileDialog();
+            this.UI_toolStrip.SuspendLayout();
             this.UI_StatusStrip_Main.SuspendLayout();
             this.SuspendLayout();
             // 
-            // toolStrip1
+            // UI_toolStrip
             // 
-            this.toolStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.UI_toolStrip.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.UI_ToolStrip_LoadFile,
             this.UI_ToolStrip_Analyze,
             this.UI_ToolStrip_Algorithm,
             this.UI_ToolStrip_SelectedView});
-            this.toolStrip1.Location = new System.Drawing.Point(0, 0);
-            this.toolStrip1.Name = "toolStrip1";
-            this.toolStrip1.Size = new System.Drawing.Size(898, 25);
-            this.toolStrip1.TabIndex = 0;
-            this.toolStrip1.Text = "toolStrip1";
+            this.UI_toolStrip.Location = new System.Drawing.Point(0, 0);
+            this.UI_toolStrip.Name = "UI_toolStrip";
+            this.UI_toolStrip.Size = new System.Drawing.Size(898, 25);
+            this.UI_toolStrip.TabIndex = 0;
+            this.UI_toolStrip.Text = "toolStrip1";
             // 
             // UI_ToolStrip_LoadFile
             // 
@@ -64,6 +65,7 @@
             this.UI_ToolStrip_LoadFile.Name = "UI_ToolStrip_LoadFile";
             this.UI_ToolStrip_LoadFile.Size = new System.Drawing.Size(58, 22);
             this.UI_ToolStrip_LoadFile.Text = "Load File";
+            this.UI_ToolStrip_LoadFile.Click += new System.EventHandler(this.UI_ToolStrip_LoadFile_Click);
             // 
             // UI_ToolStrip_Analyze
             // 
@@ -138,6 +140,11 @@
             this.UI_StatusStrip_PackagesUninstallable.Size = new System.Drawing.Size(127, 17);
             this.UI_StatusStrip_PackagesUninstallable.Text = "Packages Uninstallable";
             // 
+            // UI_openFileDialog
+            // 
+            this.UI_openFileDialog.FileName = "openFileDialog1";
+            this.UI_openFileDialog.Filter = "txt files|*.txt|All files|*.*";
+            // 
             // UI_MainForm_Installotron
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -145,11 +152,11 @@
             this.ClientSize = new System.Drawing.Size(898, 433);
             this.Controls.Add(this.UI_StatusStrip_Main);
             this.Controls.Add(this.listView1);
-            this.Controls.Add(this.toolStrip1);
+            this.Controls.Add(this.UI_toolStrip);
             this.Name = "UI_MainForm_Installotron";
             this.Text = "Lab02Installotron";
-            this.toolStrip1.ResumeLayout(false);
-            this.toolStrip1.PerformLayout();
+            this.UI_toolStrip.ResumeLayout(false);
+            this.UI_toolStrip.PerformLayout();
             this.UI_StatusStrip_Main.ResumeLayout(false);
             this.UI_StatusStrip_Main.PerformLayout();
             this.ResumeLayout(false);
@@ -159,7 +166,7 @@
 
         #endregion
 
-        private System.Windows.Forms.ToolStrip toolStrip1;
+        private System.Windows.Forms.ToolStrip UI_toolStrip;
         private System.Windows.Forms.ToolStripButton UI_ToolStrip_LoadFile;
         private System.Windows.Forms.ToolStripButton UI_ToolStrip_Analyze;
         private System.Windows.Forms.ToolStripComboBox UI_ToolStrip_Algorithm;
@@ -169,6 +176,7 @@
         private System.Windows.Forms.ToolStripStatusLabel UI_StatusStrip_PackagesLoaded;
         private System.Windows.Forms.ToolStripStatusLabel UI_StatusStrip_PackagesInstallable;
         private System.Windows.Forms.ToolStripStatusLabel UI_StatusStrip_PackagesUninstallable;
+        private System.Windows.Forms.OpenFileDialog UI_openFileDialog;
     }
 }
 
