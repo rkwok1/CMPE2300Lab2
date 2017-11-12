@@ -123,15 +123,8 @@ namespace CMPE2300Lab2
         {
             for (int i = 0; i < uninstalledList.Count; i++)
             {
-                //If the package has NO dependencies (independent of others)
-                if (uninstalledList[i].pList.Count.Equals(0))
-                {
-                    //Add it to the installed list
-                    installedList.Add(uninstalledList[i]);
-                    //remove it from the uninstalled list as you just installed
-                    uninstalledList.Remove(uninstalledList[i]);
-                }
-                else if (installedList[i].pList.Contains(uninstalledList[i].pList[i]))
+                //If the package is empty
+                if(uninstalledList[i].pList.Count > 0)
                 {
 
                 }

@@ -42,7 +42,6 @@
             this.UI_StatusStrip_PackagesInstallable = new System.Windows.Forms.ToolStripStatusLabel();
             this.UI_StatusStrip_PackagesUninstallable = new System.Windows.Forms.ToolStripStatusLabel();
             this.UI_openFileDialog = new System.Windows.Forms.OpenFileDialog();
-            this.UI_ToolStripItem_Timer = new System.Windows.Forms.ToolStripStatusLabel();
             this.UI_toolStrip.SuspendLayout();
             this.UI_StatusStrip_Main.SuspendLayout();
             this.SuspendLayout();
@@ -51,9 +50,9 @@
             // 
             this.UI_toolStrip.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.UI_ToolStrip_LoadFile,
-            this.UI_ToolStrip_SelectedView,
             this.UI_ToolStrip_Analyze,
-            this.UI_ToolStrip_Algorithm});
+            this.UI_ToolStrip_Algorithm,
+            this.UI_ToolStrip_SelectedView});
             this.UI_toolStrip.Location = new System.Drawing.Point(0, 0);
             this.UI_toolStrip.Name = "UI_toolStrip";
             this.UI_toolStrip.Size = new System.Drawing.Size(898, 25);
@@ -78,7 +77,6 @@
             this.UI_ToolStrip_Analyze.Name = "UI_ToolStrip_Analyze";
             this.UI_ToolStrip_Analyze.Size = new System.Drawing.Size(52, 22);
             this.UI_ToolStrip_Analyze.Text = "Analyze";
-            this.UI_ToolStrip_Analyze.Click += new System.EventHandler(this.UI_ToolStrip_Analyze_Click);
             // 
             // UI_ToolStrip_Algorithm
             // 
@@ -131,8 +129,7 @@
             this.UI_StatusStrip_Main.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.UI_StatusStrip_PackagesLoaded,
             this.UI_StatusStrip_PackagesInstallable,
-            this.UI_StatusStrip_PackagesUninstallable,
-            this.UI_ToolStripItem_Timer});
+            this.UI_StatusStrip_PackagesUninstallable});
             this.UI_StatusStrip_Main.Location = new System.Drawing.Point(0, 411);
             this.UI_StatusStrip_Main.Name = "UI_StatusStrip_Main";
             this.UI_StatusStrip_Main.Size = new System.Drawing.Size(898, 22);
@@ -164,14 +161,6 @@
             // 
             this.UI_openFileDialog.FileName = "openFileDialog1";
             this.UI_openFileDialog.Filter = "txt files|*.txt|All files|*.*";
-            // 
-            // UI_ToolStripItem_Timer
-            // 
-            this.UI_ToolStripItem_Timer.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Text;
-            this.UI_ToolStripItem_Timer.ForeColor = System.Drawing.Color.Blue;
-            this.UI_ToolStripItem_Timer.Name = "UI_ToolStripItem_Timer";
-            this.UI_ToolStripItem_Timer.Size = new System.Drawing.Size(85, 17);
-            this.UI_ToolStripItem_Timer.Text = "Completed in: ";
             // 
             // UI_MainForm_Installotron
             // 
@@ -207,7 +196,6 @@
         private System.Windows.Forms.OpenFileDialog UI_openFileDialog;
         private System.Windows.Forms.ColumnHeader UI_ListViewColumn_Package;
         private System.Windows.Forms.ColumnHeader UI_ListViewColumn_Dependencies;
-        private System.Windows.Forms.ToolStripStatusLabel UI_ToolStripItem_Timer;
     }
 }
 
